@@ -1,0 +1,235 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+
+
+p,h1,h2{
+    color: #1b1b1b;
+}
+
+/* ------------------------ Menu ----------------------------- */
+.contain-menu{
+    background-color: white;
+    width:100%;
+    height:75px;
+}
+
+nav{
+    width:1070px;
+    height:75px;
+    margin:auto;
+
+    display: flex;
+    // flex-direction: row;
+}
+
+nav img {
+    width:180px;
+    height:auto;
+    margin:auto 0;
+    display: block;
+}
+
+.toNavigate{
+    display: flex;
+    flex-direction: row;
+    width:min-content;
+    height:min-content;
+    margin:auto 0;
+    margin-left:12px;
+}
+
+.toNavigate div {
+    font-size:14px;
+    padding:10px 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.containConnect{
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+    margin-right:0;
+}
+
+.containConnect button{
+    border-radius:20px;
+    background-color: #72ac51;
+    color:white;
+    border:none;
+    height:32px;
+    width:auto;
+    padding:0 24px;
+    cursor: pointer;
+}
+.containConnect button:nth-child(1){
+    margin-right:12px;
+}
+.containConnect button:hover{
+    background-color: #47752d;
+}
+
+a{
+    text-decoration: none;
+}
+#about{
+    color:black;
+}
+
+#logIn{
+    color: white;
+}
+
+.activeMenu{
+    background-color: #eee;
+}
+
+
+
+/* ------------------------ Main ------------------------------ */
+
+.contain-page{
+    margin:auto;
+    margin-top:20px;
+    width:1070px;
+    
+    display:flex;
+    flex-direction: row;
+}
+
+/* -------------- Aside -------------------- */
+
+aside {
+    flex:1;
+    /* border:1px solid black; */
+    height:174px;
+    background-color: white;
+    margin-right:10px;
+}
+aside div {
+    height:58px;
+    font-weight: 600;
+    padding-left:20px;
+    cursor:pointer;
+
+    display: flex;
+}
+
+aside .active{
+    color:white;
+}
+aside .divActive{
+    background-color: #72ac51;
+}
+aside div p {
+    margin-left:0;
+    font-size:18px;
+}
+
+
+/* ------------------------- Main ------------------------ */
+
+main{
+    flex:4 ;
+    margin:10px;
+    /* border:1px solid black; */
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 400;
+    color: #565656;
+    margin-left:12px;
+}
+
+.contain-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:20px;
+}
+
+section {
+    background-color: white;
+}
+
+section img{
+    width:100%;
+}
+
+.text{
+    margin:30px;
+}
+
+h2{
+    font-weight: 600;
+    font-size:20px;
+}
+
+.text p{
+    font-size:15px;
+}
+
+// ----------------------------- Login ------------------------------------
+
+.containConnect .active{
+    background-color:#47752d ;
+}
+
+.contain-log{
+    background-color: white;
+    width:570px;
+    margin:auto;
+    margin-top:20px;
+}
+
+.contain-log h1{
+    padding-top:67px;
+    font-size:32px;
+}
+
+.contain-log h1, form{
+    margin-left:60px;
+}
+
+input{
+    height:45px;
+    width:438px;
+    margin-top:20px;
+    font-size:16px;
+    border:1px solid grey;
+    // outline: none;
+    padding-left: 12px;
+}
+
+input:focus{
+    outline: 2px solid #72ac51 ;
+}
+
+input[name="username"]:invalid{
+    outline:none;
+    outline: 2px solid red;
+}
+
+input[type="submit"]{
+    width:450px;
+    height:42px;
+    font-size: 14px;
+    margin-bottom: 60px;
+    background-color: #72ac51;
+    color: white;
+    border:none;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #47752d;
+}
+
+
